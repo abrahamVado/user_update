@@ -148,7 +148,7 @@ if (isset($_POST['update-profile']))
                         }
                         else
                         {
-                            mysqli_stmt_bind_param($stmt, "ssssssss", $f_name, $l_name, $email,
+                            mysqli_stmt_bind_param($stmt, "ssssssssssssss", $f_name, $l_name, $email,
                                 $gender, $headline, $bio, $hobbies, $joined, $birthday, $birthplace, $livesin, $phone, 
                                 $FileNameNew, $_SESSION['userUid']);
                         }
